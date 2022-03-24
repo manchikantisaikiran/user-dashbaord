@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+.container{
+    width: 100%;
+    padding: 5px 12px;
+}
+
 .nav{
     display: flex;
     justify-content: space-between;
@@ -43,8 +48,13 @@ aside{
 }
 
 aside .header .sidebar-item {
-    background: #12364a;
+    background: #12364a !important;
     border-top-right-radius: 50px;
+}
+
+.sidebar-item a {
+    color: inherit;
+    text-decoration: none !important; 
 }
 
 aside .footer{
@@ -62,8 +72,8 @@ aside .footer{
     align-items: center;
 }
 
-.active{
-    color: #e4aa19;
+.sidebar-item{
+    cursor: pointer !important;
 }
 
 .date{
@@ -81,6 +91,25 @@ aside .footer{
 .bg-yellow-shade{
     background-color: #fcb712 !important;
 }
+.bg-disability-assesment{
+    background-color: #dc2127 !important;
+}
+.bg-manage-benificiary{
+    background-color: #ab4f44 !important;
+}
+.bg-disability-certificate{
+    background-color: #12679a !important;
+}
+.bg-verify-eligibility{
+    background-color: #0f7e89 !important;
+}
+.bg-visa-fees{
+    background-color: #1191d0 !important;
+}
+.bg-service6{
+    background-color: #1233fe !important;
+}
+
 
 .green-shade{
     color: #0b8003 !important;
@@ -94,3 +123,41 @@ aside .footer{
     color: #fcb712 !important;
 }
 
+.active{
+    color: #e4aa19 !important;
+}
+
+/* page header styles */
+.page-heading-container{
+    background-color: white;
+    border: 1px solid #dfdfdf;
+    border-radius: 5px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.page-heading-container .heading{
+    color: #b2b0b0;
+    font-size: 22px;
+}
+
+/* search box styles */
+.search-box{
+    position: relative;
+}
+
+.search-box .search-icon{
+    position: absolute;
+    right: 10px;
+    top: 7px;
+    color: gray;
+}
+
+.search-box-input{
+    padding: 5px;
+    border-radius: 13px;
+    border: 2px solid #e4e5e5;
+}
