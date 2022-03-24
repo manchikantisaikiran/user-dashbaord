@@ -53,8 +53,8 @@ aside .header .sidebar-item {
 }
 
 .sidebar-item a {
-    color: inherit;
     text-decoration: none !important; 
+    color: inherit;
 }
 
 aside .footer{
@@ -70,6 +70,10 @@ aside .footer{
     display: flex;
     gap: 7px;
     align-items: center;
+}
+
+.sidebar-item:hover, .sidebar-item:hover a{
+    color: #e4aa19;
 }
 
 .sidebar-item{
@@ -124,6 +128,10 @@ aside .footer{
 }
 
 .active{
+    color: #e4aa19 !important;
+}
+
+.active,.active a{
     color: #e4aa19 !important;
 }
 
