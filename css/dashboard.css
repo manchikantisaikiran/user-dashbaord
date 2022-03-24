@@ -1,0 +1,168 @@
+main .container {
+  padding: 10px;
+  width: calc(100% - 200px);
+}
+
+main .container .card-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+main .container .card-wrapper .card1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px;
+  box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+  border: 0.5px solid #ddd;
+  border-radius: 3px;
+}
+
+.image {
+  width: 36px;
+  height: 36px;
+  background: red;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.card1 .content .number {
+  font-weight: bold;
+  font-size: 25px;
+  text-align: center;
+}
+
+.card1 .content .heading {
+  font-size: 11px;
+  white-space: nowrap;
+}
+
+.tables-wrapper {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.tables-wrapper .submitted-applications .heading {
+  font-size: 18px;
+  padding: 5px;
+  background: white;
+  box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+  border: 1px solid #ebeced;
+}
+
+.tables-wrapper .submitted-applications .body {
+  font-size: 11px;
+}
+
+.tables-wrapper .submitted-applications .body .row {
+  display: grid;
+  grid-template-columns: 1.5fr 1.8fr 1fr 1fr;
+  gap: 10px;
+  padding: 5px;
+  border: 0.5px solid #ebeced;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  color: #8d8d8d;
+}
+
+.request-status {
+  color: #218b1a;
+  font-weight: bold;
+}
+
+.row{
+    background-color: #fff !important;
+}
+
+.row:nth-child(2n+1){
+    background-color: #fafafa !important;
+}
+
+.heading-row {
+  background-color: #f5f4f4 !important;
+  color: black !important;
+  font-size: 14px;
+}
+
+.th{
+    font-weight: bold;
+}
+
+.chart{
+    border: 1px solid #ebeced;
+    display: flex;
+    flex-direction: column;
+}
+
+.chart .chart-card{
+    background-color: white;
+    border-bottom: 1px solid #ebeced;
+    flex-grow: 1;
+}
+
+.chart .chart-card img{
+    height: 85%;
+    width: 85%;
+}
+
+.chart .total-appliations{
+    text-align: center;
+    padding: 5px;
+    padding: 6px;
+}
+
+.chart .total-appliations .text{
+    font-size: 11px;
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+
+.chart .total-appliations .number{
+    font-size: 20px;
+    font-weight: bolder;
+    background-color: white;
+    border-bottom: 1px solid #ebeced;
+}
+
+.multiple-cards-container{
+    display: flex;
+    text-align: center;
+    gap: 10px;
+    flex-wrap: wrap;   
+    justify-content: space-around;
+    align-items: center;
+    padding: 6px;
+}
+
+.multiple-cards-container .number-container{
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+}
+
+.multiple-cards-container .text{
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.multiple-cards-container .number{
+    font-size: 20px;
+    font-weight: bolder;
+    background-color: white;
+    border-bottom: 1px solid #ebeced;
+}
+
+.multiple-cards-container .percent{
+    font-size: 11px;
+    margin-top: auto;
+    margin-left: 3px;
+    font-weight: bolder;
+}
