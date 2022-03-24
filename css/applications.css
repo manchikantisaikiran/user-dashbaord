@@ -1,0 +1,64 @@
+.applications-table {
+  margin-top: 12px;
+  border: 1px solid #ebeced;
+}
+
+.applications-table .row {
+  display: grid;
+  grid-template-columns: 1.2fr 1.2fr 1fr 1fr 0.9fr;
+  gap: 10px;
+  padding: 5px;
+  border: 0.5px solid #ebeced;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+  padding: 7px 25px;
+  color: #8d8d8d;
+}
+
+.th {
+  font-weight: bold;
+  font-size: 16px;
+  color: black;
+}
+
+.td {
+  font-size: 11px;
+}
+
+.fa-eye {
+  color: #fccc59;
+  text-align: center;
+}
+
+.request-status {
+  color: #218b1a;
+  font-weight: bold;
+}
+
+.inputs-row{
+    border: none !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    padding: 10px 40px !important;
+}
+
+.select-box{
+    position: relative;
+    width: 250px;
+}
+
+.select-box label{
+    background-color: white;
+    position: absolute;
+    top: -11px;
+    left: 5px;
+    padding: 3px;
+    color: black;
+    font-size: 12.5px;
+}
+
+.application-request-select-box{
+    padding: 7px;
+    width: 100%;
+}

@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/applications.css">
     <script src="https://kit.fontawesome.com/62fd71b6bd.js" crossorigin="anonymous"></script>
 </head>
 
@@ -39,7 +40,7 @@
                     </div>
                 </div>
             </div>
-            <div class="sidebar-item active">
+            <div class="sidebar-item">
                 <i class="fab fa-500px"></i>
                 <a href="./dashboard.html">dashboard</a>
             </div>
@@ -51,7 +52,7 @@
                 <i class="far fa-user"></i>
                 <a href="./profile.html">profile</a>
             </div>
-            <div class="sidebar-item">
+            <div class="sidebar-item active">
                 <i class="far fa-file-pdf"></i>
                 <a href="./applications.html">my applications</a>
             </div>
@@ -67,7 +68,99 @@
         </aside>
 
         <div class="container">
-            
+            <div class="page-heading-container">
+                <div class="heading">
+                    my applications
+                </div>
+            </div>
+            <div class="applications-table">
+                <div class="row inputs-row">
+                    <div class="search-box">
+                        <input type="text" placeholder="search" class="search-box-input" name="search" id="search">
+                        <i class="fas fa-search search-icon"></i>
+                    </div>
+                    <div class="select-box">
+                        <label for="status">status of application request</label>
+                        <select class="application-request-select-box" name="application-request" id="application-request">
+                            <option value="volvo">Accepted</option>
+                            <option value="saab">Rejected</option>
+                            <option value="opel">Under review</option>
+                            <option value="audi">Returned</option>
+                            <option value="audi">Cancelled</option>
+                            <option value="audi">Incomplete</option>
+                          </select>
+                    </div>
+                </div>
+                <div class="row heading-row">
+                    <div class="th">application number</div>
+                    <div class="th">service type</div>
+                    <div class="th">application date</div>
+                    <div class="th">application status</div>
+                    <div class="th">application view</div>
+                </div>
+                <div class="row">
+                    <div class="td">CNTR-REQ-3198</div>
+                    <div class="td">create premilinary approval</div>
+                    <div class="td">19/04/2021</div>
+                    <div class="td request-status">accepted</div>
+                    <i class="fas fa-eye"></i>
+                </div>
+                <div class="row">
+                    <div class="td">CNTR-REQ-3198</div>
+                    <div class="td">create premilinary approval</div>
+                    <div class="td">19/04/2021</div>
+                    <div class="td request-status">accepted</div>
+                    <i class="fas fa-eye"></i>
+                </div>
+                <div class="row">
+                    <div class="td">CNTR-REQ-3198</div>
+                    <div class="td">create premilinary approval</div>
+                    <div class="td">19/04/2021</div>
+                    <div class="td request-status">accepted</div>
+                    <i class="fas fa-eye"></i>
+                </div>
+                <div class="row">
+                    <div class="td">CNTR-REQ-3198</div>
+                    <div class="td">create premilinary approval</div>
+                    <div class="td">19/04/2021</div>
+                    <div class="td request-status">accepted</div>
+                    <i class="fas fa-eye"></i>
+                </div>
+                <div class="row">
+                    <div class="td">CNTR-REQ-3198</div>
+                    <div class="td">create premilinary approval</div>
+                    <div class="td">19/04/2021</div>
+                    <div class="td request-status">accepted</div>
+                    <i class="fas fa-eye"></i>
+                </div>
+                <div class="row">
+                    <div class="td">CNTR-REQ-3198</div>
+                    <div class="td">create premilinary approval</div>
+                    <div class="td">19/04/2021</div>
+                    <div class="td request-status">accepted</div>
+                    <i class="fas fa-eye"></i>
+                </div>
+                <div class="row">
+                    <div class="td">CNTR-REQ-3198</div>
+                    <div class="td">create premilinary approval</div>
+                    <div class="td">19/04/2021</div>
+                    <div class="td request-status">accepted</div>
+                    <i class="fas fa-eye"></i>
+                </div>
+                <div class="row">
+                    <div class="td">CNTR-REQ-3198</div>
+                    <div class="td">create premilinary approval</div>
+                    <div class="td">19/04/2021</div>
+                    <div class="td request-status">accepted</div>
+                </div>
+                <div class="row">
+                    <div class="td">CNTR-REQ-3198</div>
+                    <div class="td">create premilinary approval</div>
+                    <div class="td">19/04/2021</div>
+                    <div class="td request-status">accepted</div>
+                    <i class="fas fa-eye"></i>
+                </div>
+            </div>
         </div>
     </main>
 </body>
