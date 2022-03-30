@@ -44,11 +44,14 @@
     margin-top: 10px;
 }
 
-.service-cards-wrapper .card .card-button button{
+.service-cards-wrapper .card .card-button a{
     padding: 10px;
     border-radius: 20px;
     background-color: #3c8084;
     border: none;
     color: white;
     text-transform: uppercase;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 13px;
 }

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../../css/services.css">
+    <link rel="stylesheet" href="../../css/service-pages/request-proof-letter.css">
+    <script src="https://kit.fontawesome.com/62fd71b6bd.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="nav-item-container">
+            <div class="logo">
+                <img src="../../img/logo.png" alt="logo" />
+            </div>
+        </div>
+        <div class="nav-item-container nav-item-links">
+            <div class="notification">
+                <i class="far fa-bell"></i>
+            </div>
+            <div class="logout">
+                Logout
+            </div>
+        </div>
+
+    </nav>
+
+    <main>
+        <aside>
+            <div class="header">
+                <div class="sidebar-item">
+                    <i class="fas fa-user-circle"></i>
+                    <div class="data">
+                        <div class="name">ahmed ali</div>
+                        <div class="date active">31/12/2021</div>
+                    </div>
+                </div>
+            </div>
+            <div class="sidebar-item">
+                <i class="fab fa-500px"></i>
+                <a href="../dashboard.html">dashboard</a>
+            </div>
+            <div class="sidebar-item active">
+                <i class="fas fa-cogs"></i>
+                <a href="../services.html">services</a>
+            </div>
+            <div class="sidebar-item">
+                <i class="far fa-user"></i>
+                <a href="../profile.html">profile</a>
+            </div>
+            <div class="sidebar-item">
+                <i class="far fa-file-pdf"></i>
+                <a href="../applications.html">my applications</a>
+            </div>
+            <div class="sidebar-item">
+                <i class="fas fa-graduation-cap"></i>
+                <a href="../certificates.html">certificates</a>
+            </div>
+            <div class="footer">
+                <div class="logo">
+                    <img src="../../img/logo.png" alt="logo" />
+                </div>
+            </div>
+        </aside>
+
+        <div class="container">
+            <div class="page-heading-container">
+                <div class="heading">
+                    Request Proof Letter of Disability
+                </div>
+                <div class="search-box">
+                    <input type="text" placeholder="search" class="search-box-input" name="search" id="search">
+                    <i class="fas fa-search search-icon"></i>
+                </div>
+            </div>
+
+            <div class="assesment-service-wrapper">
+                <div class="top-section">
+                    <label for="benificiary">Choose the benificiary</label>
+                    <select name="benificiary" id="benificiary">
+                        <option value="">Choose benificiary</option>
+                        <option value="self">Self</option>
+                        <option value="1">benificiary 1</option>
+                        <option value="2">benificiary 2</option>
+                        <option value="3">benificiary 3</option>
+                        <option value="4">benificiary 4</option>
+                    </select>
+                </div>
+
+                <div class="bennificiary-info">
+                    <div class="title">Benificiary Information</div>
+                    <div class="inputs-container">
+                        <div>
+                            <label>Benificiary Name</label>
+                            <input type="text" placeholder="Data">
+                        </div>
+                        <div>
+                            <label>Id Number</label>
+                            <input type="text" placeholder="Data">
+                        </div>
+                        <div>
+                            <label>Last Disability Assesment Date</label>
+                            <input type="text" placeholder="Data">
+                        </div>
+                        <div>
+                            <label>Standardized Disability</label>
+                            <input type="text" placeholder="Data">
+                        </div>
+                        <div>
+                            <label>Disability Category</label>
+                            <input type="text" placeholder="Data">
+                        </div>
+                        <div>
+                            <label>Subsidy Amount</label>
+                            <input type="text" placeholder="Data">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bottom-section">
+                    <div>
+                        <label for="benificiary">Paying Authority</label>
+                        <select name="benificiary" id="benificiary">
+                            <option value="">Select Paying AUthority</option>
+                            <option value="Y">Educational Authority</option>
+                            <option value="N">Non Educational Authority</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label>Do you want to add Subsidy Amount?</label>
+                        <div class="radio-container">
+                            <div>
+                                <input type="radio" id="yes" name="add-subsidy">
+                                <span for="yes" >Yes</span>
+                            </div>
+                            <div>
+                                <input type="radio" id="no" name="add-subsidy">
+                                <span for="no" >No</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-end">
+                    <a href="../services.html">
+                        Cancel
+                    </a>
+                    <a class="service-button" href="../service-pages/application-summary.html">
+                        Next
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
