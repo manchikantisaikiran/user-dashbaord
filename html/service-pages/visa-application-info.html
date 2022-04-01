@@ -8,7 +8,7 @@
     <title>Dashboard</title>
     <link rel="stylesheet" href="../../css/styles.css">
     <link rel="stylesheet" href="../../css/services.css">
-    <link rel="stylesheet" href="../../css/service-pages/request-proof-letter.css">
+    <link rel="stylesheet" href="../../css/service-pages/visa-fees-exemtion.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
@@ -74,85 +74,43 @@
         <div class="container">
             <div class="page-heading-container">
                 <div class="heading">
-                    Request Proof Letter of Disability
-                </div>
-                <div class="search-box">
-                    <input type="text" placeholder="search" class="search-box-input" name="search" id="search">
-                    <i class="fas fa-search search-icon"></i>
+                    Application Information
                 </div>
             </div>
 
             <div class="assesment-service-wrapper">
-                <div class="top-section">
-                    <label for="benificiary">Choose the benificiary</label>
-                    <select name="benificiary" id="benificiary">
-                        <option value="">Choose benificiary</option>
-                        <option value="self">Self</option>
-                        <option value="1">benificiary 1</option>
-                        <option value="2">benificiary 2</option>
-                        <option value="3">benificiary 3</option>
-                        <option value="4">benificiary 4</option>
-                    </select>
-                </div>
-
-                <div class="bennificiary-info">
-                    <div class="title">Benificiary Information</div>
-                    <div class="inputs-container">
-                        <div>
-                            <label>Benificiary Name</label>
-                            <input type="text" placeholder="Data">
-                        </div>
-                        <div>
-                            <label>Id Number</label>
-                            <input type="text" placeholder="Data">
-                        </div>
-                        <div>
-                            <label>Last Disability Assesment Date</label>
-                            <input type="text" placeholder="Data">
-                        </div>
-                        <div>
-                            <label>Standardized Disability</label>
-                            <input type="text" placeholder="Data">
-                        </div>
-                        <div>
-                            <label>Disability Category</label>
-                            <input type="text" placeholder="Data">
-                        </div>
-                        <div>
-                            <label>Subsidy Amount</label>
-                            <input type="text" placeholder="Data">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="bottom-section">
-                    <div>
-                        <label for="benificiary">Paying Authority</label>
+                <div class="section">
+                    <div style="display: flex;flex-direction: column;">
+                        <label for="benificiary">Profession</label>
                         <select name="benificiary" id="benificiary">
-                            <option value="">Select Paying AUthority</option>
-                            <option value="Y">Educational Authority</option>
-                            <option value="N">Non Educational Authority</option>
+                            <option value="">Select type of visa</option>
+                            <option value="self">Domestic Worker</option>
+                            <option value="1">Nurse</option>
+                            <option value="2">Private Driver</option>
                         </select>
                     </div>
-                    <div>
-                        <label>Do you want to add Subsidy Amount?</label>
+                    <div style="display: flex;gap: 20px;">
+                        <label for="benificiary">Worker's Gender</label>
                         <div class="radio-container">
                             <div>
                                 <input type="radio" id="yes" name="add-subsidy">
-                                <span for="yes" >Yes</span>
+                                <span for="yes">Male</span>
                             </div>
                             <div>
                                 <input type="radio" id="no" name="add-subsidy">
-                                <span for="no" >No</span>
+                                <span for="no">Female</span>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="text-end">
+                <div class="text-center">
                     <a href="../services.html">
                         Cancel
                     </a>
-                    <a class="service-button" href="../service-pages/application-summary.html">
+                    <a class="service-button" href="../service-pages/visa-fees-exemtion.html">
+                        previous
+                    </a>
+                    <a class="service-button" href="../service-pages/visa-application-info2.html">
                         Next
                     </a>
                 </div>

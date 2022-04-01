@@ -8,10 +8,11 @@
     <title>Dashboard</title>
     <link rel="stylesheet" href="../../css/styles.css">
     <link rel="stylesheet" href="../../css/services.css">
-    <link rel="stylesheet" href="../../css/service-pages/request-proof-letter.css">
+    <link rel="stylesheet" href="../../css/service-pages/visa-fees-exemtion.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
     <script src="https://kit.fontawesome.com/62fd71b6bd.js" crossorigin="anonymous"></script>
 </head>
 
@@ -74,27 +75,11 @@
         <div class="container">
             <div class="page-heading-container">
                 <div class="heading">
-                    Request Proof Letter of Disability
-                </div>
-                <div class="search-box">
-                    <input type="text" placeholder="search" class="search-box-input" name="search" id="search">
-                    <i class="fas fa-search search-icon"></i>
+                    Visa Fees Exemption
                 </div>
             </div>
 
             <div class="assesment-service-wrapper">
-                <div class="top-section">
-                    <label for="benificiary">Choose the benificiary</label>
-                    <select name="benificiary" id="benificiary">
-                        <option value="">Choose benificiary</option>
-                        <option value="self">Self</option>
-                        <option value="1">benificiary 1</option>
-                        <option value="2">benificiary 2</option>
-                        <option value="3">benificiary 3</option>
-                        <option value="4">benificiary 4</option>
-                    </select>
-                </div>
-
                 <div class="bennificiary-info">
                     <div class="title">Benificiary Information</div>
                     <div class="inputs-container">
@@ -106,53 +91,36 @@
                             <label>Id Number</label>
                             <input type="text" placeholder="Data">
                         </div>
-                        <div>
-                            <label>Last Disability Assesment Date</label>
+                        <div style="position:relative;">
+                            <label>Date of Birth</label>
                             <input type="text" placeholder="Data">
+                            <i class="fa fa-calendar calender-icon" aria-hidden="true"></i>
                         </div>
                         <div>
-                            <label>Standardized Disability</label>
-                            <input type="text" placeholder="Data">
-                        </div>
-                        <div>
-                            <label>Disability Category</label>
-                            <input type="text" placeholder="Data">
-                        </div>
-                        <div>
-                            <label>Subsidy Amount</label>
+                            <label>Marital Status</label>
                             <input type="text" placeholder="Data">
                         </div>
                     </div>
                 </div>
 
                 <div class="bottom-section">
-                    <div>
-                        <label for="benificiary">Paying Authority</label>
-                        <select name="benificiary" id="benificiary">
-                            <option value="">Select Paying AUthority</option>
-                            <option value="Y">Educational Authority</option>
-                            <option value="N">Non Educational Authority</option>
-                        </select>
-                    </div>
-                    <div>
-                        <label>Do you want to add Subsidy Amount?</label>
-                        <div class="radio-container">
-                            <div>
-                                <input type="radio" id="yes" name="add-subsidy">
-                                <span for="yes" >Yes</span>
-                            </div>
-                            <div>
-                                <input type="radio" id="no" name="add-subsidy">
-                                <span for="no" >No</span>
-                            </div>
+                    <label>Type of Exemtion</label>
+                    <div class="radio-container">
+                        <div>
+                            <input type="radio" id="yes" name="add-subsidy">
+                            <span for="yes">New Worker</span>
+                        </div>
+                        <div>
+                            <input type="radio" id="no" name="add-subsidy">
+                            <span for="no">Worker in the Kingdom</span>
                         </div>
                     </div>
                 </div>
-                <div class="text-end">
+                <div class="text-center">
                     <a href="../services.html">
                         Cancel
                     </a>
-                    <a class="service-button" href="../service-pages/application-summary.html">
+                    <a class="service-button" href="../service-pages/visa-application-info.html">
                         Next
                     </a>
                 </div>

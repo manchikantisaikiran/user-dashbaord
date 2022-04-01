@@ -1,0 +1,96 @@
+.assesment-service-wrapper{
+    background-color: white;
+    border: 1px solid #dfdfdf;
+    border-radius: 5px;
+    /* height: 60px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px;
+    margin-top: 20px;
+}
+
+.assesment-service-wrapper .container{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.assesment-service-wrapper .left,.assesment-service-wrapper .right{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    padding: 30px;
+}
+
+.assesment-service-wrapper label{
+    margin-bottom: 5px;
+}
+
+select,input{
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.assesment-service-wrapper a{
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #3c8084;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.top-image-container, .address-container{
+    display: flex;
+    justify-content: space-between;
+    font-size: 11px;
+}
+
+.caption{
+    margin-top: 12px;
+}
+
+.text-center{
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.text-center a{
+    font-size: 11px !important;
+}
+
+.main-section p{
+    font-size: 13px;
+}
+
+.table{
+    margin: 20px 0;
+}
+
+.table .row{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    border: 1px solid #d9d8d8;
+}
+
+.table .row > div{
+    padding: 7px;
+}
+
+.text-right{
+    margin-left: auto;
+    text-align: right;
+    font-size: 12px !important;
+}
+
+.text-right a{
+    display: block;
+    font-size: 12px !important;
+    background-color: transparent !important;
+}

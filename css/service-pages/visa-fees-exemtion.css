@@ -1,0 +1,134 @@
+.assesment-service-wrapper{
+    background-color: white;
+    border: 1px solid #dfdfdf;
+    border-radius: 5px;
+    /* height: 60px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px;
+    margin-top: 20px;
+}
+
+.assesment-service-wrapper .container{
+    display: flex;
+    padding: 20px;
+}
+
+.assesment-service-wrapper .left,.assesment-service-wrapper .right{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    padding: 30px;
+}
+
+.assesment-service-wrapper label{
+    margin-bottom: 5px;
+}
+
+select,input{
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.assesment-service-wrapper .service-button{
+    background-color: #3c8084;
+}
+.assesment-service-wrapper a{
+    padding: 6px 20px;
+    margin-right: 10px;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    background-color: #c1bfbf;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+label{
+    font-weight: normal;
+    margin-bottom: 7.5px;
+    font-size: 13px;
+}
+
+.top-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 25px;
+    margin-right: auto;
+}
+
+.bennificiary-info{
+    position: relative;
+    border-top: 1px solid #c7c5c5;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.title{
+    position: absolute;
+    top: -10px;
+    left: 1px;
+    background-color: white;
+    padding: 3px 5px;
+    font-weight: bold;
+
+}
+
+.inputs-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    padding: 20px 30px;
+}
+
+.inputs-container > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 75%;
+    margin: auto;
+}
+
+label{
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.text-center{
+    margin: auto;
+    margin-top: 100px;
+}
+
+.radio-container{
+    display: flex;
+    gap: 12px;
+}
+
+.bottom-section{
+    margin-right: auto;
+    display: flex;
+    gap: 25px;
+    margin-left: 65px;
+}
+
+.calender-icon{
+    right: 10px;
+    position: absolute;
+    top: 27px;
+    color: #b1b1b1;
+}
+
+.section{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    width: 45%;
+}
