@@ -7,8 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
     <link rel="stylesheet" href="../../css/styles.css">
-    <link rel="stylesheet" href="../../css/services.css">
-    <link rel="stylesheet" href="../../css/service-pages/visa-fees-exemtion.css">
+    <link rel="stylesheet" href="../../css/certificates.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
@@ -48,7 +47,7 @@
                 <i class="fab fa-500px"></i>
                 <a href="../dashboard.html">dashboard</a>
             </div>
-            <div class="sidebar-item active">
+            <div class="sidebar-item">
                 <i class="fas fa-cogs"></i>
                 <a href="../services.html">services</a>
             </div>
@@ -60,7 +59,7 @@
                 <i class="far fa-file-pdf"></i>
                 <a href="../applications.html">my applications</a>
             </div>
-            <div class="sidebar-item">
+            <div class="sidebar-item active">
                 <i class="fas fa-graduation-cap"></i>
                 <a href="../certificates.html">certificates</a>
             </div>
@@ -74,49 +73,30 @@
         <div class="container">
             <div class="page-heading-container">
                 <div class="heading">
-                    Application Information
+                    Certificates
                 </div>
             </div>
-
-            <div class="assesment-service-wrapper">
-                <div class="section">
-                    <div style="display: flex;flex-direction: column;">
-                        <label for="benificiary">Profession</label>
-                        <select name="benificiary" id="benificiary">
-                            <option value="">Select type of visa</option>
-                            <option value="self">Domestic Worker</option>
-                            <option value="1">Nurse</option>
-                            <option value="2">Private Driver</option>
-                        </select>
-                    </div>
-                    <div style="display: flex;gap: 20px;">
-                        <label for="benificiary">Worker's Gender</label>
-                        <div class="radio-container">
-                            <div>
-                                <input type="radio" id="yes" name="add-subsidy">
-                                <span for="yes">Male</span>
-                            </div>
-                            <div>
-                                <input type="radio" id="no" name="add-subsidy">
-                                <span for="no">Female</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="text-center">
-                    <a href="../services.html">
-                        Cancel
-                    </a>
-                    <a class="previous-btn" href="../service-pages/visa-fees-exemtion.html">
-                        previous
-                    </a>
-                    <a class="service-button" href="../service-pages/visa-application-info2.html">
-                        Next
-                    </a>
+            <div class="certicates-wrapper" style="display: flex;justify-content: center;align-items: center;height: 300px;">
+                <div style="display: flex;flex-direction: column;">
+                    <label for="benificiary" style="font-size: 13px;margin-bottom: 5px;">Select the benificiary</label>
+                    <select name="benificiary" id="benificiary" style="width:200px; padding: 5px;">
+                        <option value="">Select the benificiary</option>
+                        <option value="self">Self</option>
+                        <option value="1">Benificiary 1</option>
+                        <option value="2">Benificiary 2</option>
+                        <option value="3">Benificiary 3</option>
+                        <option value="4">Benificiary 4</option>
+                        <option value="5">Benificiary 5</option>
+                    </select>
                 </div>
             </div>
         </div>
     </main>
+    <script>
+        document.querySelector('#benificiary').addEventListener('change',()=>{
+            location.href = './disability-id-card.html'
+        })
+    </script>
 </body>
 
 </html>

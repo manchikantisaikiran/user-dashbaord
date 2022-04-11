@@ -49,3 +49,63 @@
     font-size: 16px;
     margin-top: 10px;
 }
+
+a{
+    text-decoration: none !important;
+    color: inherit !important;
+}
+
+.buttons-container{
+    text-align: center;
+    border-top: 1px solid #e5e5e5;
+    padding-top: 12px;
+}
+
+.buttons-container a{
+    padding: 6px 20px;
+    margin-right: 10px;
+    border-radius: 10px;
+    border: none;
+    color: white !important;
+    background-color: #c1bfbf;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+a.service-button{
+    background-color: #3c8084;
+}
+
+label{
+    margin-bottom: 6px;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.input{
+    display: flex;
+    flex-direction: column;
+}
+
+.input input{
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.logos-container .img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logo-title{
+    display: inline;
+    position: absolute;
+    top: -12px;
+    background: white;
+    padding: 1px 5px;
+}
