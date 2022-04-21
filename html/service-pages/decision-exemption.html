@@ -158,16 +158,64 @@
                     <a class="cancel-btn" href="../services.html">
                         Cancel Application
                     </a> 
-                    <a  class="previous-btn">
+                    <a  class="previous-btn" id="print-btn">
                         Print
                     </a> 
-                    <a>
+                    <a id="issue-btn">
                         Send the decision of Exemption to E-mail
                     </a> 
                 </div>
             </div>
         </div>
     </main>
+    <div class="modal-container print-modal">
+        <div class="backdrop"></div>
+        <div class="modal">
+            <div class="modal-text">
+                Dear Beneficiary .
+                <br><br>
+                A decision of visa fees exemption is issued based on your request
+                Decision No. ####
+                <br><br>
+                Best regards
+            </div>
+            <div class="close">
+                <img src="../../img/close.svg" alt="close" width="16" height="16">
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-container email-modal">
+        <div class="backdrop"></div>
+        <div class="modal">
+            <div class="modal-text">
+                Dear Beneficiary........
+                <br><br>
+                A decision of passport fees exemption is issued based on
+                your request
+                <br><br>
+                Best regards
+            </div>
+            <div class="close">
+                <img src="../../img/close.svg" alt="close" width="16" height="16">
+            </div>
+        </div>
+    </div>
+    <script>
+        document.querySelector('#issue-btn').addEventListener('click', (event) => {
+            document.querySelector('.email-modal').style.display = 'block'
+        })
+
+        document.querySelector('#print-btn').addEventListener('click', (event) => {
+            document.querySelector('.print-modal').style.display = 'block'
+        })
+
+        document.querySelectorAll('.close').forEach(DOM => DOM.addEventListener('click', () => {
+            document.querySelector('.email-modal').style.display = 'none'
+            document.querySelector('.print-modal').style.display = 'none'
+        })
+        )
+    </script>
 </body>
 
 </html>

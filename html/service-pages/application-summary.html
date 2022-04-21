@@ -6,9 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
-    <link rel="stylesheet" href="../../css/styles.css">
     <link rel="stylesheet" href="../../css/services.css">
+    <link rel="stylesheet" href="../../css/styles.css">
     <link rel="stylesheet" href="../../css/service-pages/request-proof-letter.css">
+    <link rel="stylesheet" href="../../css/service-pages/decision-excemption.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
@@ -149,19 +150,142 @@
                     </div>
                 </div>
                 <div class="text-end">
-                    <a href="../services.html">
+                    <a class="cancel-btn" href="../services.html">
                         Cancel
                     </a>
-                    <a class="service-button" href="../service-pages/request-proof-letter.html">
+                    <a class="previous-btn" href="../service-pages/request-proof-letter.html">
                         previous
                     </a>
-                    <a class="service-button" href="../services.html">
-                        Next
+                    <a class="service-button" id="issue-btn">
+                        Issue
                     </a>
                 </div>
             </div>
         </div>
     </main>
+    
+    <div class="modal-container">
+        <div class="backdrop"></div>
+        <div class="modal" style="height: 80%;">
+            <div>
+                <div class="assesment-service-wrapper">
+                    <div class="container">
+                        <div class="top-image-container">
+                            <img src="../../img/hrd.png" alt="logo1" width="175" height="100">
+                            <img src="../../img/decision-exemption-right.png" alt="logo2" width="175" height="100">
+                        </div>
+    
+                        <div class="main-section">
+                            <h4 class="text-center" style="margin-bottom: 20px;">Decision of Determination of the Category of University Student with Disability</h4>
+    
+                            <div class="address-container">
+                                <div class="left">
+                                    <div class="address">
+                                        <div>Name: xxxxxxxxx</div>
+                                        <div>National ID: 13454342</div>
+                                        <div>Student No. 346895464</div>
+                                    </div>
+                                </div>
+                                <div class="right">
+                                    <div class="address" style="margin-left: auto;">
+                                        <div>Educational Institution: xxxxxxxxx</div>
+                                        <div>Letter No: ......</div>
+                                        <div>Date: 00/000/000 AH</div>
+                                    </div>
+        
+                                </div>
+                            </div>
+
+                            <p>Based on the Royal Consent No.: (7/B/12814) dated 13/8/1420 AH, including provision of disabled university students with the Ministry of Human Resources and Social Development financial reward and internships according to the type of disability and reward category: and Upon reviewing the technical committee's decision on the system of assessment, according to the above national ID details and the referred supreme order, the following is decided:</p>
+                            
+                            <div style="display: flex;gap: 10px; margin: 10px 0;">
+                                <img src="../../img/qr-code.jpg" alt="QR code" width="80" height="80">
+                                <p style="margin-top: 8px;">The continued validity of this endorsement is related the the continuance of the registered disability or illness in the care system</p>
+                            </div>
+                            
+                            <div class="text-center">
+                                <div>The educational institution can verify the authenticity of this order by scanning the above QR code or visiting <a  style="color: #343bfc; background-color: transparent;" href="www.mosa.gov.sa">www.taheel.net</a></div>
+                            </div>
+                        </div>
+    
+                    </div>
+                    <div class="text-center" style="display: flex; gap: 15px;">
+                        <a class="cancel-btn" id="cancel-btn">
+                            Cancel
+                        </a> 
+                        <a  class="previous-btn" id="print-btn">
+                            Print
+                        </a> 
+                        <a id="send-email-btn">
+                            Send the certificate To E-mail
+                        </a> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-container print-modal">
+        <div class="backdrop"></div>
+        <div class="modal">
+            <div class="modal-text">
+                Dear Beneficiary....
+                
+                Disability Certificate No. #### is issued based on your request
+                
+                Best regards
+            </div>
+            <div class="close">
+                <img src="../../img/close.svg" alt="close" width="16" height="16">
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-container email-modal">
+        <div class="backdrop"></div>
+        <div class="modal">
+            <div class="modal-text">
+                Dear Beneficiary
+
+                Your disability certificate is attached here with based on
+                your request.
+                
+                Best regards
+            </div>
+            <div class="close">
+                <img src="../../img/close.svg" alt="close" width="16" height="16">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.querySelector('#issue-btn').addEventListener('click', (event) => {
+            document.querySelector('.modal-container').style.display = 'block'
+        })
+
+        document.querySelector('#print-btn').addEventListener('click', (event) => {
+            document.querySelector('.print-modal').style.display = 'block'
+        })
+
+        document.querySelector('#send-email-btn').addEventListener('click', (event) => {
+            document.querySelector('.email-modal').style.display = 'block'
+        })
+
+        document.querySelector('#cancel-btn').addEventListener('click', (event) => {
+            document.querySelector('.modal-container').style.display = 'none'
+        })
+
+        document.querySelectorAll('.backdrop').forEach(DOM => DOM.addEventListener('click', () => {
+            document.querySelector('.modal-container').style.display = 'none'
+        })
+        )
+        document.querySelectorAll('.close').forEach(DOM => DOM.addEventListener('click', () => {
+            // document.querySelector('.modal-container').style.display = 'none'
+            document.querySelector('.email-modal').style.display = 'none'
+            document.querySelector('.print-modal').style.display = 'none'
+        })
+        )
+    </script>
 </body>
 
 </html>

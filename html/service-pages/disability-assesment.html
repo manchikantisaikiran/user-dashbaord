@@ -11,7 +11,8 @@
     <link rel="stylesheet" href="../../css/service-pages/disability-assesment.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
     <script src="https://kit.fontawesome.com/62fd71b6bd.js" crossorigin="anonymous"></script>
 </head>
 
@@ -86,7 +87,8 @@
                 <div class="container">
                     <div class="left">
                         <label for="service-description">Service description</label>
-                        <input type="text" name="service-description" id="service-description" placeholder="Disability Assesment Service">
+                        <input type="text" name="service-description" id="service-description"
+                            placeholder="Disability Assesment Service">
                     </div>
                     <div class="right">
                         <label for="benificiary">Choose the benificiary</label>
@@ -96,17 +98,50 @@
                             <option value="2">benificiary 2</option>
                             <option value="3">benificiary 3</option>
                             <option value="4">benificiary 4</option>
-                          </select>
+                        </select>
                     </div>
                 </div>
                 <div class="text-center">
                     <a href="../services.html">
                         Go to service
-                    </a> 
+                    </a>
                 </div>
             </div>
         </div>
     </main>
+
+    <div class="modal-container">
+        <div class="backdrop"></div>
+        <div class="modal">
+            <div class="modal-text">
+                Your appointment is reserved successfully!
+            </div>
+            <div class="close">
+                <img src="../../img/close.svg" alt="close" width="16" height="16">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.querySelector('#benificiary').addEventListener('change', (event) => {
+            console.log(event.target.value);
+            document.querySelector('.modal-container').style.display = 'block'
+            if (event.target.value == 1) {
+                document.querySelector('.modal-text').innerText = 'Sorry, you cannot apply for the service now, because there is already an application being processed.'
+            } else if (event.target.value == 2) {
+                document.querySelector('.modal-text').innerText = 'Sorry, you cannot apply for the service now, because X months have not passed yet to the last rejected application.'
+            } else if (event.target.value == 3) {
+                document.querySelector('.modal-text').innerText = 'Sorry, you cannot apply for the service now, because X months have not passed yet from the date you suspended on it for non-compliance.'
+            } else {
+                document.querySelector('.modal-text').innerText = 'Please, complete your profile (social record) before applying for the service.'
+            }
+        })
+
+        document.querySelectorAll('.close').forEach(DOM => DOM.addEventListener('click', () => {
+            document.querySelector('.modal-container').style.display = 'none'
+        })
+        )
+    </script>
 </body>
 
 </html>

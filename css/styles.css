@@ -184,7 +184,7 @@ a.cancel-btn {
   border-radius: 20px;
   border: none;
   color: white;
-  background-color: #c1bfbf;
+  background-color: #949090;
   text-transform: uppercase;
   cursor: pointer;
   text-decoration: none;
@@ -199,6 +199,10 @@ a.cancel-btn {
   background-color: #c1bfbf !important;
 }
 
+a.service-button{
+  background-color: #3c8084;
+}
+
 .modal-container,
 .calender-container,
 .Time-container {
@@ -206,7 +210,7 @@ a.cancel-btn {
 }
 
 .backdrop {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
@@ -226,9 +230,15 @@ a.cancel-btn {
   height: 200px;
   transform: translate(-50%, -50%);
   z-index: 20;
+  padding: 16px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.modal-text{
+  width: 80%;
+  font-size: 13px;
 }
 
 .modal .close,
